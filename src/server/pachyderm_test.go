@@ -5265,7 +5265,7 @@ func TestGarbageCollection(t *testing.T) {
 		// - object w/ contents of /foo + object w/ contents of /bar
 		// - 6 objects in __spec__:
 		//   (hashtree + /spec file) * (2 'pipeline' commits + 1 'failurePipeline' commit)
-		if objectsAfter != 9 {
+		if len(objectsAfter) != 9 {
 			return fmt.Errorf("expected 9 objects remaining, but found %d", objectsAfter)
 		}
 		return nil
