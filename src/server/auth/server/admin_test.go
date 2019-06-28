@@ -8,6 +8,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"io"
 	"strings"
 	"testing"
 	"time"
